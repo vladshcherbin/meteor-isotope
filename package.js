@@ -1,6 +1,6 @@
 Package.describe({
   name: 'shcherbin:isotope',
-  version: '2.1.1',
+  version: '2.2.0',
   summary: 'Isotope js wrapper for meteor. Masonry, packery and other layouts. Filtering and sorting.',
   git: 'https://github.com/VladShcherbin/isotopejs',
   documentation: 'readme.md'
