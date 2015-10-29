@@ -7,39 +7,73 @@
 </body>
 
 <template name="example">
-  <button class="filter-all">All</button>
-  <button class="filter-orange">Orange</button>
-  <button class="filter-green">Green</button>
+  <section>
+    <p>Filtering</p>
+    <button class="filter-all">All</button>
+    <button class="filter-orange">Orange</button>
+    <button class="filter-green">Green</button>
+  </section>
+  <section>
+    <p>Sorting</p>
+    <button class="sort-original">Original</button>
+    <button class="sort-color">Color</button>
+    <button class="sort-number">Number</button>
+    <button class="sort-letter">Letter</button>
+  </section>
   <ul class="isotope">
     <li>
-      <div class="orange">1</div>
+      <div class="orange" data-color="orange">
+        <span class="number">1</span>
+        <span class="letter">A</span>
+      </div>
     </li>
     <li>
-      <div class="orange">2</div>
+      <div class="orange" data-color="orange">
+        <span class="number">2</span>
+        <span class="letter">X</span>
+      </div>
     </li>
     <li>
-      <div class="green">3</div>
+      <div class="green" data-color="green">
+        <span class="number">3</span>
+        <span class="letter">U</span>
+      </div>
     </li>
     <li>
-      <div class="orange">4</div>
+      <div class="orange" data-color="orange">
+        <span class="number">4</span>
+        <span class="letter">F</span>
+      </div>
     </li>
     <li>
-      <div class="green">5</div>
+      <div class="green" data-color="green">
+        <span class="number">5</span>
+        <span class="letter">O</span>
+      </div>
     </li>
     <li>
-      <div class="orange">6</div>
+      <div class="orange" data-color="orange">
+        <span class="number">6</span>
+        <span class="letter">C</span>
+      </div>
     </li>
     <li>
-      <div class="orange">7</div>
+      <div class="orange" data-color="orange">
+        <span class="number">7</span>
+        <span class="letter">I</span>
+      </div>
     </li>
     <li>
-      <div class="orange">8</div>
+      <div class="orange" data-color="orange">
+        <span class="number">8</span>
+        <span class="letter">J</span>
+      </div>
     </li>
     <li>
-      <div class="green">9</div>
-    </li>
-    <li>
-      <div class="green">10</div>
+      <div class="green" data-color="green">
+        <span class="number">9</span>
+        <span class="letter">Q</span>
+      </div>
     </li>
   </ul>
 </template>

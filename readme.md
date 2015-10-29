@@ -16,7 +16,7 @@ The package includes only core js file of the latest package version.
 
 ## Demo
 
-[DEMO with filtering](http://isotope.meteor.com)
+[DEMO with filtering and sorting](http://isotope.meteor.com)
 
 ## Installation
 
@@ -30,7 +30,7 @@ You can view all available options on the [isotope website](http://isotope.metaf
 
 ## Example
 
-In the example directory you can find an example with filtering. Basically, what you need to do it to create a template and in a rendered callback to call isotope with options, you can also add events if needed.
+In the example directory you can find an example with filtering and sorting. Basically, what you need to do it to create a template and in a rendered callback to call isotope with options, you can also add events if needed.
 
 ### Blaze template
 

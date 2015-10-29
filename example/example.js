@@ -4,11 +4,17 @@ if (Meteor.isClient) {
 
     self.selection = this.$('ul.isotope').isotope({
       itemSelector: 'div',
-      layoutMode: 'fitRows'
+      layoutMode: 'fitRows',
+      getSortData: {
+        color: '[data-color]',
+        number: '.number parseInt',
+        letter: '.letter'
+      }
     });
   });
 
   Template.example.events({
+    // Filtering
     'click button.filter-orange': function () {
       Template.instance().selection.isotope({filter: '.orange'});
     },
@@ -17,6 +23,19 @@ if (Meteor.isClient) {
     },
     'click button.filter-all': function () {
       Template.instance().selection.isotope({filter: '*'});
+    },
+    // Sorting
+    'click button.sort-original': function () {
+      Template.instance().selection.isotope({sortBy: 'original-order'});
+    },
+    'click button.sort-color': function () {
+      Template.instance().selection.isotope({sortBy: 'color'});
+    },
+    'click button.sort-number': function () {
+      Template.instance().selection.isotope({sortBy: 'number'});
+    },
+    'click button.sort-letter': function () {
+      Template.instance().selection.isotope({sortBy: 'letter'});
     }
   });
 }
